@@ -1,0 +1,140 @@
+.hintRoom{
+    z-index: -1;
+    position: absolute;
+    top: 3%;
+    left: 13%;
+    height: 76.3%;
+    width: 85.8%;
+}
+.hintFields{
+    opacity: 0.3;
+}
+.hint{
+    position: absolute;
+    opacity: 0.25;
+}
+.leftRow {
+    position: fixed;
+    left: 0.5%;
+    width: 15%;
+    color: #fff;
+    box-sizing: border-box;
+    z-index: 100;
+    visibility: visible;
+}
+.leftRow .tile{
+    margin-top: 9.2%;
+    width: 10.9vw;
+}
+
+.bottomRow{
+    display: flex;
+    position: absolute;
+    bottom: 0%;
+}
+.tile{
+    border-style: groove;
+    background-color: rgba(92, 53, 53, 0.208);
+    width: 12vw;
+    height: 7.8vw;
+    margin: 0.5%;
+}
+
+.hintInImage{
+    position: absolute;
+    z-index: 1;
+}
+.imageFadeOut{
+    animation: fade 5s forwards;
+}
+@keyframes fade {
+    0%{
+
+    }
+    100%{
+        visibility: hidden;
+    }
+}
+.h3{
+    width: 4%;
+    top: 10%;
+    left: 37%;
+    opacity: 0.3;
+}
+.h10{
+    width: 4%;
+    left: 40%;
+    top: 45%;
+}
+.h6{
+    width: 7%;
+    left: 88%;
+    top: 68%;
+}
+.h7{
+    width: 7%;
+    left: 46%;
+    top: 27%;
+}
+.h9{
+    width: 7%;
+    left: 90%;
+    top: 7%;
+}
+.h8{
+    width: 5%;
+    left: 18.5%;
+    top: 35%;
+}
+.h2{
+    width: 3%;
+    left: 34%;
+    top: 34.3%;
+}
+.h12{
+    width: 6%;
+    left: 22%;
+    top: 60%;
+}
+.h5{
+    width: 10%;
+    left: 48.5%;
+    top: 63.5%;
+}
+.h11{
+    width: 4%;
+    left: 13%;
+    top: 23%;
+}
+.h4{
+    width: 2.5%;
+    left: 32.8%;
+    top: 19%;
+}
+.h1{
+    width: 6%;
+    left: 55.5%;
+    top: 50%;
+}
+
+.box{
+    z-index: -1;
+    position: absolute;
+    border: 1px solid black;
+    background-color: rgb(182, 239, 238);
+    width: 85vw;
+    top: 3%;
+    left: 13%;
+    padding: 0.5%;
+    visibility: hidden;
+}
+.holders{
+    position: relative;
+    width: 60vw;
+    height: 11.8vw;
+    background-color: rgba(157, 159, 170, 0.748);
+    margin: 0.1%;
+}
+.eachRow{
+    display: flex;
+}

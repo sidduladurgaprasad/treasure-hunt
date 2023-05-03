@@ -1,0 +1,197 @@
+
+  .balloon{
+      z-index: -1;
+      position: absolute;
+      opacity: 1;
+      animation: moveUp 15s forwards infinite;
+      bottom: 0%;
+      opacity: 0;
+  }
+  #zero{
+      animation-delay: 0s;
+      left: 90%;
+  }
+  #one{
+      animation-delay: 10s;
+      left: 20%;
+  }
+  #two{
+      animation-delay: 4s;
+      left: 40%;
+  }
+  #three{
+      animation-delay: 2s;
+      left: 80%;
+  }
+  #four{
+      animation-delay: 12s;
+      left: 55%;
+  }
+  #five{
+      animation-delay: 16s;
+      left: 30%;
+  }
+  #six{
+      animation-delay: 6s;
+      left: 68%;
+  }
+  #seven{
+      animation-delay: 14s;
+      left: 45%;
+  }
+  #eight{
+      animation-delay: 8s;
+      left: 15%;
+  }
+  #nine{
+      animation-delay: 9s;
+      left: 70%;
+  }
+  @keyframes moveUp {
+      0%{
+          opacity: 1;
+      }
+      100%{
+          opacity: 0;
+          bottom:130%;
+      }
+  }
+  
+
+  #collectedBalloons {
+  position: fixed;
+  top: 10%;
+  left: 1%;
+  width: 10%;
+  height: 80%;
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  box-sizing: border-box;
+  z-index: 100;
+  visibility: visible;
+  }
+
+  #collectedBalloons ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  }
+
+  #collectedBalloons li {
+  margin-bottom: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: color 0.3s;
+  }
+
+  #collectedBalloons li:hover {
+  color: #ff0;
+  }
+
+  .balloon-card {
+      width: 80%;
+      height: 8%;
+      margin: 10px;
+      background-color: white;
+      color: black;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      font-size: 2rem;
+  }
+
+  #phone {
+    position: absolute;
+    z-index: -2;
+    left: 20%;
+    top: 3%;
+    width: 15vw;
+    height: 49vh;
+    background-color: #a1c8ce;
+    border-radius: 20px;
+    margin: 50px auto;
+    text-align: center;
+    color: wheat;
+    visibility: hidden;
+  }
+
+  .screen {
+    width: 12vw;
+    height: 36vh;
+    margin-top: 10px;
+    background-color: #000000;
+    border-radius: 15px;
+    margin: 20px auto;
+    overflow: hidden;
+  }
+
+  .dial-pad button.clear {
+    width: 7vh;
+    height: 7vh;
+    background-color: #5a9f37;
+    color: #fff;
+    font-size: 24px;
+    font-family: 'Segoe UI Symbol';
+    font-weight: bold;
+    border-radius: 50%;
+    box-shadow: 0px 5px 0px 0px  #153405;
+  }
+  #locker{
+    position:absolute;
+    visibility: hidden;
+    /* visibility: visible; */
+    top: 20%;
+    left: 37%;
+  }
+  #locker input[type="text"] {
+    width: 30%;
+    height: 40px;
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 93%;
+    text-align: center;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.3);
+    outline: none;
+  }
+  #open {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  #open:hover {
+    background-color: #3e8e41;
+  }
+  #key{
+    z-index: 5;
+    position: absolute;
+    top: 32%;
+    left: 9%;
+    visibility: hidden;
+  }
+  #door{
+    position: absolute;
+    /* visibility: visible; */
+    visibility: hidden;
+    z-index: -2;
+    left: 59%;
+    top: 8%;
+  }
+  .lock{
+    width: 5%;
+    height: 10%;
+    background-color: transparent;
+    position: absolute;
+    left: 60%;
+    top: 30%;
+  }

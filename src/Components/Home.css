@@ -1,0 +1,131 @@
+.level{
+    position: absolute;
+    width: 25vh;
+    height:20vh;
+    border-radius: 50%;
+}
+.unlocked{
+    background-color: rgba(246, 203, 134, 0.649);
+    animation: glow 1s ease infinite;
+}
+.L1{
+    left: 30%;
+    top:55%;
+}
+.L2{
+    left: 10%;
+    top: 93%;
+}
+.L3{
+    left: 44%;
+    top: 132%;
+}
+/* .L1:hover{
+    left:30%;
+    top:59%;
+    width: 26vh;
+    height: 21vh;
+} */
+@keyframes glow {
+    0%{
+        background-color:  rgba(188, 127, 57, 0.017);
+    }
+    100%{
+        background-color: rgba(176, 146, 26, 0.767)
+    }
+}
+
+
+.treasure{
+    position: absolute;
+    left: 78%;
+    top: 100%;
+    width: 18vh;
+    height:18vh;
+    animation: move 1s ease-in-out infinite;
+}
+@keyframes move {
+    0%{
+        top:100%;
+        transform: rotateY(0deg);
+    }
+    50%{
+        top:100%;
+        transform: rotateY(20deg);
+    }
+    100%{
+        top:100%;
+        transform: rotateY(0deg);
+    }
+}
+
+.man1{
+    z-index: 3;
+    position: absolute;
+    width: 15vh;
+    height: 15vh;
+    left: 37%;
+    top: 57%
+}
+
+.man2{
+    z-index: 3;
+    position: absolute;
+    width: 15vh;
+    height: 15vh;
+    left: 18%;
+    top: 95%
+}
+
+.man3{
+    z-index: 3;
+    position: absolute;
+    width: 15vh;
+    height: 15vh;
+    left: 40%;
+    top: 130%
+}
+
+.moveToLevel2{
+    animation: moveToTwo 5s forwards;
+}
+@keyframes moveToTwo {
+    0%{
+
+    }
+    10%{
+        left: 30%;
+    }
+    100%{
+        left: 18%;
+        top: 95%;
+    }
+}
+.moveToLevel3{
+    animation: moveToThree 5s forwards;
+}
+@keyframes moveToThree {
+    0%{
+
+    }
+    100%{
+        left: 40%;
+        top: 130%;
+    }
+}
+.moveToLevelTreasure{
+    animation: moveToTreasure 5s forwards;
+}
+@keyframes moveToTreasure {
+    0%{
+
+    }
+    10%{
+        left:50%;
+        top:130%
+    }
+    100%{
+        left: 85%;
+        top: 100%;
+    }
+}
